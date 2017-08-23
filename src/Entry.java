@@ -17,6 +17,7 @@ public class Entry{
             String[] feats = new String[line];
             while((reader.readLine()) != null){
                 // feats[i] = org.apache.commons.io.IOUtils.toString(reader);
+                feats[i] =(reader);
                 i++;
             }
             reader.close();
