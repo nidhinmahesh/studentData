@@ -26,7 +26,6 @@ public class Open{
         +"\n"+"\n"+"You are logged in as Teacher. Enter  8.Switch to Student  9.Switch to Parent");
 
         n = s.nextInt();
-        s.close();
         switch (n) {
             case 1:
                 ent.readData(ent.lines());
