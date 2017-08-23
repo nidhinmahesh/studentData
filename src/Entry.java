@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Entry{
+    Status stEnt = new Status();
     Scanner s = new Scanner(System.in);
     // public Entry(){
 
@@ -31,9 +32,8 @@ public class Entry{
             String name = ROLL_NUMBER + ".txt";
             FileWriter out = null;
             out = new FileWriter(name);
-
             for(int num = 1; num<=ln; num++){
-                
+
             }
             out.close();
         }
