@@ -29,7 +29,7 @@ public class Open{
         s.close();
         switch (n) {
             case 1:
-                ent.lines();
+                ent.readData(ent.lines());
                 break;
             case 2:
 
