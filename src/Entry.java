@@ -24,14 +24,23 @@ public class Entry{
     }
     public void readData(int ln){
         System.out.println(ln+" queries needed");
-        for(int num = 1; num<=ln; num++){
-            try{
-                String str = s.next();
+        
+        try{
+            System.out.print("Enter student roll number: ");
+            String ROLL_NUMBER = s.next();
+            String name = ROLL_NUMBER + ".txt";
+            FileWriter out = null;
+            out = new FileWriter(name);
+
+            for(int num = 1; num<=ln; num++){
+                
             }
-            catch(Exception e){
-                System.out.println("cannot read data!");
-            }
+            out.close();
         }
+        catch(Exception e){
+            System.out.println("cannot read data!");
+        }
+        
     }
 
    
