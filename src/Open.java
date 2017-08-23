@@ -16,7 +16,6 @@ public class Open{
         ZipIt zip = new ZipIt();
         Parent prt = new Parent();
         Student std = new Student();
-        Authentication auth = new Authentication();
         Scanner s = new Scanner(System.in);
 
         stat.getTime();
@@ -30,7 +29,7 @@ public class Open{
         s.close();
         switch (n) {
             case 1:
-
+                ent.lines();
                 break;
             case 2:
 
@@ -50,17 +49,14 @@ public class Open{
             case 7:
                 
                 break;
-            case 8:            //file name should be roll number
-            //we search for file number
-                auth.checkRoll();
-                std.giveDetails();
+            case 8:       
                 
                 break;
             case 9:
                 
                 break;                                                                      
             default:
-            System.out.println("   Oops! you are out of the world.. try again with the options above");
+            System.out.println("   Oops!.. try again with the options above");
                 break;
         }
     }
