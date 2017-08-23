@@ -22,8 +22,9 @@ public class Entry{
     }
     public void readData(int ln){
         System.out.println(ln+" queries needed");
-        for(int num; num <=ln; num++){
-
+        
+        for(int num = 0; num<=ln; num++){
+            
         }
     }
 
