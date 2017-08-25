@@ -28,12 +28,14 @@ public class Open{
         Edit edt = new Edit();
         //input
         Scanner s = new Scanner(System.in);
+        //fetch common details like roll number
+        Fetch fet = new Fetch();
 
         stat.getTime();
         stat.getDate();
         System.out.println("change log saved to edited files. Check for details."+"\n");
         System.out.println("enter option: 1.New Entry  2.Search  3.Add new Feature  4.Delete feature  5.Export as Zip"+"\n"+
-        "  6.add here  7.add here"
+        "  6.Edit student details  7.add here"
         +"\n"+"\n"+"You are logged in as Teacher. Enter  8.Switch to Student  9.Switch to Parent");
 
         n = s.nextInt();

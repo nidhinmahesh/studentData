@@ -1,0 +1,24 @@
+//all object declaration
+        //get details
+        Status stat = new Status();
+        //create new file
+        Entry ent = new Entry();
+        // add a new feature
+        AddFeature add = new AddFeature();
+        //delete a feature 
+        DeleteFeature del = new DeleteFeature();
+        //search among files
+        Search sr = new Search();
+        //to create a zipfile of all the files
+        ZipIt zip = new ZipIt();
+        //parent console
+        Parent prt = new Parent();
+        //student console
+        Student std = new Student();
+        //to edit files
+        Edit edt = new Edit();
+        //input
+        Scanner s = new Scanner(System.in);
+        //fetch common details like roll number
+        Fetch fet = new Fetch();
+        //
