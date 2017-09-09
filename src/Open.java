@@ -53,7 +53,10 @@ public class Open{
                 
                 break;
             case 5:
-                
+            String ZIP_CREATED = "Data.zip";
+            String SOURCE_FOLDER = "C:\\Users\\hp\\Desktop\\S3-OOP-Project\\data";
+                zip.generateFileList(new File(SOURCE_FOLDER));
+                zip.zipOut(ZIP_CREATED);
                 break;
             case 6:
                 
