@@ -36,7 +36,7 @@ public class Open{
         System.out.println("change log saved to edited files. Check for details."+"\n");
         System.out.println("enter option: 1.New Entry  2.Search  3.Add new Feature  4.Delete feature  5.Export as Zip"+"\n"+
         "  6.Edit student details  7.add here"
-        +"\n"+"\n"+"You are logged in as Teacher. Enter  8.Switch to Student  9.Switch to Parent");
+        +"\n"+"\n"+"You are logged in as Faculty. Enter  8.Switch to Student  9.Switch to Parent");
 
         n = s.nextInt();
         switch (n) {
@@ -53,10 +53,10 @@ public class Open{
                 
                 break;
             case 5:
-            String ZIP_CREATED = "Data.zip";
-            String SOURCE_FOLDER = "C:\\Users\\hp\\Desktop\\S3-OOP-Project\\data";
-                zip.generateFileList(new File(SOURCE_FOLDER));
-                zip.zipOut(ZIP_CREATED);
+            // String ZIP_CREATED = "Data.zip";
+            // String SOURCE_FOLDER = "C:\\Users\\hp\\Desktop\\S3-OOP-Project\\data";
+            //     zip.generateFileList(new File(SOURCE_FOLDER));
+            //     zip.zipOut(ZIP_CREATED);
                 break;
             case 6:
                 
