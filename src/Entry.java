@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Entry{
+    int i =0;
     Status stEnt = new Status();
     Scanner s = new Scanner(System.in);
     //fetch common details like roll number
@@ -13,9 +14,10 @@ public class Entry{
             BufferedReader reader = new BufferedReader(new FileReader("features.txt"));
             while((reader.readLine()) != null){
                 line++;
+                //System.out.print(reader.readLine()+ " ");
             }
             //writes features into array
-            int i=0;
+            //int i=0;
             String[] feats = new String[line];
             while((reader.readLine()) != null){
                 // feats[i] = org.apache.commons.io.IOUtils.toString(reader);
@@ -31,6 +33,7 @@ public class Entry{
         }
     }
     public void readData(int ln){
+        System.out.println(" ");
         System.out.println(ln+" queries needed");
         
         try{
@@ -42,13 +45,21 @@ public class Entry{
             FileWriter out = null;
             out = new FileWriter(name);
             //write file student details
-            for(int num = 0; num<ln; num++){
-                //System.out.println(feats[num]);
+            String[] dataRead = new String[i];
+            int k = 0;
+            BufferedReader reader = new BufferedReader(new FileReader("features.txt"));
+             while((reader.readLine()) != null){
+
+                System.out.println(reader.readLine());
+                dataRead[k] = s.nextLine();
+                out.write(dataRead[k]);
+                
+                k++;
             }
             out.close();
         }
-        catch(Exception e){
-            System.out.println("cannot read data!");
+        catch(Exception e){ 
+            System.out.println("cannot read data!  Error: "+ e);
         }
         
     }
