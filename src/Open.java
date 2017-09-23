@@ -24,8 +24,7 @@ public class Open{
         Parent prt = new Parent();
         //student console
         Student std = new Student();
-        //to edit files
-        Edit edt = new Edit();
+        //to edit files use same entry class.
         //input
         Scanner s = new Scanner(System.in);
         //fetch common details like roll number
@@ -59,6 +58,7 @@ public class Open{
             //     zip.zipOut(ZIP_CREATED);
                 break;
             case 6:
+            ent.readData(ent.lines());
                 
                 break;
             case 7:

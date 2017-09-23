@@ -3,14 +3,13 @@ import java.util.Scanner;
 
 public class Entry{
     int i =0;
+    int line = 0;
     Status stEnt = new Status();
     Scanner s = new Scanner(System.in);
     //fetch common details like roll number
     Fetch fet = new Fetch();
     public int lines(){
-        try {
-            int line = 0;
-            
+        try {            
             BufferedReader reader = new BufferedReader(new FileReader("features.txt"));
             while((reader.readLine()) != null){
                 line++;
@@ -45,14 +44,14 @@ public class Entry{
             FileWriter out = null;
             out = new FileWriter(name);
             //write file student details
-            String[] dataRead = new String[i];
+            String[] dataRead = new String[line];
             int k = 0;
             BufferedReader reader = new BufferedReader(new FileReader("features.txt"));
              while((reader.readLine()) != null){
 
-                System.out.println(reader.readLine());
+                System.out.println(reader);
                 dataRead[k] = s.nextLine();
-                out.write(dataRead[k]);
+                out.write(dataRead[k]+ '\n');
                 
                 k++;
             }
