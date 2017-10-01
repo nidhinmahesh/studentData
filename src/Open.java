@@ -17,7 +17,7 @@ public class Open{
         //delete a feature 
         DeleteFeature del = new DeleteFeature();
         //search among files
-        Search sr = new Search();
+        //Search sr = new Search();
         //to create a zipfile of all the files
         ZipIt zip = new ZipIt();
         //parent console
@@ -34,15 +34,16 @@ public class Open{
         stat.getDate();
         System.out.println("change log saved to edited files. Check for details."+"\n");
         System.out.println("enter option: 1.New Entry  2.Search  3.Add new Feature  4.Delete feature  5.Export as Zip"+"\n"+
-        "  6.Edit student details  7.add here"
+        "  6.Edit student details  7.share via Email  8.All files  9."
         +"\n"+"\n"+"You are logged in as Faculty. Enter  8.Switch to Student  9.Switch to Parent");
 
         n = s.nextInt();
         switch (n) {
             case 1:
-                ent.readData(ent.lines());
+                ent.readData(ent.lines()); //OK
                 break;
             case 2:
+                //sr.getList();
 
                 break;
             case 3:
