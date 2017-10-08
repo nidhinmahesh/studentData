@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Open{
+public class StudentDiary{
 
     //main class file
     public static void main(String[] args){
@@ -35,7 +35,8 @@ public class Open{
         System.out.println("change log saved to edited files. Check for details."+"\n");
         System.out.println("enter option: 1.New Entry  2.Search  3.Add new Feature  4.Delete feature  5.Export as Zip"+"\n"+
         "  6.export via Email  7.Edit student details  8.All files  9.Backup and Restore"
-        +"\n"+"\n"+"You are logged in as Faculty. Enter  8.Switch to Student  9.Switch to Parent");
+        +"\n"+"\n"+"You are logged in as Faculty. Enter  8.Switch to Student  9.Switch to Parent"+"\n"+
+        "NOTE: you can prompt to skip any data entry input using ENTER key");
 
         n = s.nextInt();
         switch (n) {
