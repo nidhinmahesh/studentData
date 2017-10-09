@@ -5,4 +5,4 @@
 Java JDK installed in your system. 
 
 ## Run
-Compile and run Open.java in src folder
+Compile and run StudentDiary.java in src folder
