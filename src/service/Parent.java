@@ -1,4 +1,4 @@
-public class Parent extends Open{
+public class Parent extends StudentDiary{
     public Parent(){
         
     }

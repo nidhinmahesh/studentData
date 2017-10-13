@@ -1,11 +1,11 @@
-import java.util.Scanner;
-
+import java.util.*;
+import java.io.*;
 public class StudentDiary{
 
     //main class file
     public static void main(String[] args){
         //all variables
-        int n;
+        int n=0;
 
         //all object declaration
         //get details
