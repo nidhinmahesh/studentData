@@ -41,14 +41,4 @@ public class AddFeature{
         }
     
     }
-
-    // public void getMoreFeats(){
-    //     String ok = "ok";
-    //     String newFeat = s.nextLine();
-    //     if(ok.equals(newFeat)){
-    //         System.out.println("this shit works now");
-    //     }
-    //     else
-    //         System.out.println("Still!");   
-    // }
 }

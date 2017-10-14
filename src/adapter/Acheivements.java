@@ -1,7 +1,8 @@
 package adapter;
 public class Acheivements{
     String qa = "name some acheivements: ";
-    public static void GET(){
+    public String GET(){
+        return qa;
     }
     public static void FIND(){
 
