@@ -13,8 +13,6 @@ public class SeeAllAtOnce{
         ArrayList<String> arrli = new ArrayList<String>(n);
         arrli.add(ach.GET());
         arrli.add(add.GET());
-    
-        int size=arrli.size();
         //write it into features.txt at once
     //     try{
     //         BufferedWriter fw = new BufferedWriter(new FileWriter("features.txt"));
@@ -25,6 +23,12 @@ public class SeeAllAtOnce{
     //     System.out.println(ioe);
     // }
     ///////// write into features.txt////////////////
-    
-}
+//     Iterator itr=arrli.iterator(); 
+//     BufferedWriter out = null;
+//     out = new BufferedWriter(new FileWriter("features.txt"));
+//     while(itr.hasNext()){
+//         out.write(Integer.toString());
+//         out.newLine();
+//     }
+    }
 }

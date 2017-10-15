@@ -1,5 +1,6 @@
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
+import adapter.*;
 public class Entry{
     int i =0;
     int line = 0;
@@ -42,6 +43,24 @@ public class Entry{
                 dataRead[k] = s.nextLine();
                 out.write(dataRead[k]+ '\n');
                 k++;
+            }
+            ////////in built features////////////
+        
+            int count=0;
+           
+            Acheivements ach = new Acheivements();
+            Address add = new Address();
+            ArrayList<String> arrli = new ArrayList<String>();
+            arrli.add(ach.GET());
+            arrli.add(add.GET());
+            int size=arrli.size();
+            String[] dataRead2 = new String[size];
+            for(int i=0;i<size;i++){  
+                System.out.println(arrli.get(i));
+                
+                dataRead2[k] = s.nextLine();
+                out.write(dataRead2[count]+'\n');
+                count++;                
             }
             System.out.println("Entry added successfully.");
             out.close();
