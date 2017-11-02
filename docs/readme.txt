@@ -1,1 +1,0 @@
-project-master/docs/ folder contains information to make changes.
