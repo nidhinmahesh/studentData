@@ -8,5 +8,6 @@ public class Questions{
         c = scan.next();
         return c;
         //implemented like their_variable = ask();
+        //use genrics
     }
 }

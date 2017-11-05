@@ -1,5 +1,5 @@
 public class FindChild{
-String t = "Enter roll number: ";
-    TellThem q = new TellThem();
-    q.tell(t);
+String st = "Enter roll number: ";
+    TellThem t = new TellThem();
+    t.tell(st);
 }
