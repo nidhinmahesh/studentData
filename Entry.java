@@ -31,8 +31,10 @@ public class Entry{
         try{
             String ROLL_NUMBER = fet.roll();
             String name = "T"+ROLL_NUMBER + ".txt";
+            
             FileWriter out = null;
             out = new FileWriter(name);
+
             String[] dataRead = new String[line];
             int k = 0;
             String thisLine;
