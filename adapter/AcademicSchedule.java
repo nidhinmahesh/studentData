@@ -1,6 +1,7 @@
 public class AcademicSchedule{
-
+    int line=0;
     public void newSchedule(){
+        
 
         ArrayList<String> ar = new ArrayList<String>();
         //a file for teacher message. Will be read up when the array is not empty
@@ -9,6 +10,7 @@ public class AcademicSchedule{
             BufferedReader reader = new BufferedReader(new FileReader("Schedule.txt"));
             while((line = reader.readLine())!= null)
             {
+                line++;
                 ar.add(line);
             }       
 
@@ -23,5 +25,8 @@ public class AcademicSchedule{
         }
 
 
+    }
+    public int getCount(){
+        return line;
     }
 }
