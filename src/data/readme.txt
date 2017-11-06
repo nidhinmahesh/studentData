@@ -1,1 +1,0 @@
-project-master/data/ folder contains data of individual students
