@@ -8,7 +8,7 @@ public class ExamMarks{
 
     public void addMarks()
     {
-
+    	System.out.println("Done");
     }
     
 }

@@ -7,11 +7,14 @@ public class Faculty{
         Scanner scan = new Scanner(System.in);
         
         int n = scan.nextInt();
+        
+        
+
         switch(n){
 
             case 1:
-            AddStudent add = new AddStudent();
-            add.newStudent();
+            AddStudent adds = new AddStudent();
+            adds.newStudent();
             break;
 
             case 2:

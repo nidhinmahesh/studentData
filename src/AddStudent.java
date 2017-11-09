@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -35,21 +36,30 @@ public class AddStudent{
 
 
 
-        try(FileWriter fw = new FileWriter("students.txt", true);
-            BufferedWriter bw = new BufferedWriter(fw);
-            PrintWriter out = new PrintWriter(bw))
-            {
+        try{
 
+            FileWriter fw = new FileWriter("students.txt", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw);
+            
+                out.print("\n");
+                
                 while(i>=0)
                 {
                     out.print(get[k]+"\t");
                     
                     k++;
+                    i--;
                 }
-
+                
+                out.close();
+                
                 System.out.println("done.|/");
             }
-
+            catch(Exception e)
+            {
+                System.out.println("Cannot add student: "+e);
+            }
     }
     
 }
