@@ -7,7 +7,7 @@ public class StudentDiary{
 
 
         Scanner scan = new Scanner(System.in);
-        Int n = scan.nextInt();
+        int n = scan.nextInt();
 
         switch(n){
             case 1:

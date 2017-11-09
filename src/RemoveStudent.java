@@ -4,5 +4,5 @@ public class RemoveStudent{
     {
 
     }
-    0
+    
 }

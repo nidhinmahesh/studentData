@@ -1,4 +1,5 @@
-public class Faculty{
+import java.util.Scanner;
+public class Student{
 
     public void callFun()
     {

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Parent{
 
     public void callFun()
