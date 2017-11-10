@@ -12,7 +12,12 @@ public class TeacherRemarks{
 
     }
 
-
+    public void ask()
+    {
+        get[i] = scan.next();
+        i++;
+    }
+    
 
     public void getTeacherRemarks()
     {
