@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 public class AddExamSchedule{
     
     Scanner scan = new Scanner(System.in);

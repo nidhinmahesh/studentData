@@ -31,7 +31,9 @@ public class ExamMarks{
     {
 
         System.out.println("Roll number: ");
-        ask();
+         get[i] = scan.next();
+        i++;
+        //ask();
         System.out.println("Semester: ");
         ask();
         System.out.println("Exam type: ");

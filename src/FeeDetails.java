@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 public class FeeDetails{
 
     Scanner scan = new Scanner(System.in);

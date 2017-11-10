@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 public class TeacherRemarks{
     Scanner scan = new Scanner(System.in);
 
@@ -17,7 +20,7 @@ public class TeacherRemarks{
         get[i] = scan.next();
         i++;
     }
-    
+
 
     public void getTeacherRemarks()
     {
