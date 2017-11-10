@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Faculty{
     public void callFun()
     {
-        System.out.println("How do you like me to help you: "+'\n'+"1.Add new Student  2.add exam marks  3.remove student  4. add exam schedule  5.give remarks  6.enter fee details  7.quit");
+        System.out.println("How do you like me to help you: "+'\n'+"1.Add new Student  2.add exam marks  3.remove student  4. add exam schedule  5.give remarks  6.enter fee details  7. edit student bio criteria  8.quit");
         Scanner scan = new Scanner(System.in);
         
         int n = scan.nextInt();
-        
+        scan.close();
         
 
         switch(n){
@@ -41,6 +41,10 @@ public class Faculty{
             fee.enterFeeDetails();
 
             case 7:
+            EditStudentCriteria editStudent = new EditStudentCriteria();
+            editStudent.editCriteria();
+
+            case 8:
             System.exit(0);
 
         }

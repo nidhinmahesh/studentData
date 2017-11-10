@@ -29,6 +29,8 @@ public class AddStudent{
 
 
             }
+            reader.close();
+            scan.close();
         }
         catch(Exception e){
             System.out.println("Cannot read bio: "+e);
@@ -43,7 +45,7 @@ public class AddStudent{
             PrintWriter out = new PrintWriter(bw);
             
                 out.print("\n");
-                
+
                 while(i>=0)
                 {
                     out.print(get[k]+"\t");
