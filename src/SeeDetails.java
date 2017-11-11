@@ -1,11 +1,18 @@
+import java.io.*;
+import java.util.*;
+
 public class SeeDetails{
 
     public void getDetails()
     {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Roll Number: ");
+        String name = sc.next();
         try{
 
-            File file = new File("bio.txt");
-            final Scanner scan = new Scanner(file);
+            File file = new File("students.txt");
+            Scanner scan = new Scanner(file);
 
              while(scan.hasNextLine()){
                 final String lineFromFile = scan.nextLine();
@@ -20,6 +27,11 @@ public class SeeDetails{
                  }
               }
             
+        }
+
+        catch(Exception e)
+        {
+            System.out.println("Cannot find: "+e);
         }
     }
 }

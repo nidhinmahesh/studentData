@@ -8,7 +8,7 @@ public class Faculty{
         
         int n = scan.nextInt();
         scan.close();
-        //ExamMarks marks = new ExamMarks();
+        ExamMarks marks = new ExamMarks();
 
         switch(n){
 
@@ -18,7 +18,7 @@ public class Faculty{
             break;
 
             case 2:
-            ExamMarks marks = new ExamMarks();
+            //ExamMarks marks = new ExamMarks();
             marks.addMarks();
             break;
 

@@ -1,10 +1,13 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+
 public class Student{
 
     public void callFun()
     {
         System.out.println("How do you like me to help you: "+'\n'+"1.See your details  2.Exam marks  3.Fee details  4. exam schedule  5.quit");
         Scanner scan = new Scanner(System.in);
+        // SeeDetails details = new SeeDetails();
         
         int n = scan.nextInt();
         switch(n){
